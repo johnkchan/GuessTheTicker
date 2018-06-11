@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap4-growth.min.css">
+    <title>Guess the Ticker</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fullheight bg-growth bg-dark text-white mb-0 radius-0">
+      <div class="container">
+        <form>
+          <div class= "row">
+            <h1 class="col-md-12">Gue$$ the Ticker</h1>
+            <h3 class="col-md-12" id="tickerSymbol"></h3>
+            <p class="col-md-12" style="display: none" id="companyName"></p>
+            <!--<p class="col-md-12" id="companyName"></p>-->
+            <p class="col-md-12" id="companyIndustry"></p>
+            <p class="col-md-12" id="companySubIndustry"></p>
+            <p class="col-md-12" id="companyAddress"></p>
+            <h5 class="col-md-2">Score:</h5>
+            <h5 class="col-md-2" id="currentScore">0</h5>
+            <h5 class="col-md-2">High Score:</h5>
+            <h5 class="col-md-2" id="highScore">0</h5>
+            <label class="col-md-12" for="tickerGuess">Ticker Guess:</label>
+            <input type="text" class="form-control col-md-6" id="tickerGuess" placeholder="Company Name">
+            <button type="button" class="btn btn-primary" id="submitGuess">Submit</button>
+          <div>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="js/fortune500data.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+  </body>
+</html>
